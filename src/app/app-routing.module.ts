@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },  {
+    path: 'admin-landing',
+    loadChildren: () => import('./pages/admin-landing/admin-landing.module').then( m => m.AdminLandingPageModule)
   }
+
 ];
 
 @NgModule({
